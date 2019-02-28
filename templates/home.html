@@ -1,0 +1,39 @@
+{% extends 'baseview.html' %}
+    {% block title %}
+        首页home
+    {% endblock %}
+
+    {% block css %}
+        <style>
+            .header{
+                background: green;
+            }
+        </style>
+    {% endblock %}
+
+
+{#     {% block header %}#}
+{#        首页#}
+{#     {% endblock %}#}
+
+
+<p>
+    {{ temp }}
+</p>
+
+
+     {% block footer-title %}
+        首页-底部通栏
+     {% endblock %}
+
+{% block  header %}
+    首页
+{% endblock %}
+
+
+{% block  content %}
+    <P>
+        {% autoescape off %}
+        {% endautoescape %}
+    </P>
+{% endblock %}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+<style>
+    .header{
+         width: 100%;
+        background: aqua;
+        color: blue;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 23px;
+        position: fixed;
+    }
+    .footer{
+         width: 100%;
+        background: aqua;
+        color: gray;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 23px;
+        position: fixed;
+    }
+
+</style>
+</head>
+<body>
+<div class="header">
+    {% block header %}
+
+    {% endblock %}
+</div>
+{#<div>#}
+{#    {% block footer %}#}
+{#        <p>底部</p>#}
+{#    {% endblock %}#}
+{#</div>#}
+
+
+{% block footer %}
+<div class="footer">
+    底部通栏
+</div>
+{% endblock %}
+
+</body>
+</html>
